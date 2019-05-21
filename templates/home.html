@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="pt-br"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <link href="home_arquivos/bootstrap.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>GatoFlix</title>
+  </head>
+  <body>
+
+    <div align="center">
+        <h2>GatoFlix</h2><br>
+        <table class="table table-dark">
+          <thead>
+            <tr>
+              <th scope="col">Data de hoje</th>
+              <th scope="col">Pagou mês passado</th>
+              <th scope="col">Vai pagar esse mês</th>
+              <th scope="col">Vai pagar próximo mês</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{ dados['now'] }}</td>
+              <td>{{ dados['lastuser'] }}</td>
+              <td>{{ dados['currentuser'] }}</td>
+              <td>{{ dados['nextuser'] }}</td>
+            </tr>
+
+          </tbody>
+        </table>
+    </div>
+
+  
+</body></html>
