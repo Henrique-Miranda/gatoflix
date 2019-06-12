@@ -8,6 +8,7 @@ import os
 
 app = Flask(__name__)
 
+# Keys are user names, Values are the months that correspond to each user
 users = {'Henrique': [1, 5, 9], 'Jony': [2, 6, 10], 'Thiago': [3, 7, 11], 'Samuel': [4, 8, 12]}
 
 @app.route('/')
